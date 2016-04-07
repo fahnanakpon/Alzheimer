@@ -14,6 +14,11 @@
 		9FC007D21CAE55090022342C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FC007D01CAE55090022342C /* LaunchScreen.storyboard */; };
 		9FC007DD1CAE55090022342C /* AlzheimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC007DC1CAE55090022342C /* AlzheimerTests.swift */; };
 		9FC007E81CAE55090022342C /* AlzheimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC007E71CAE55090022342C /* AlzheimerUITests.swift */; };
+		9FC007FB1CAE62700022342C /* blue-foldover-semi-circular-background-59283.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FC007FA1CAE62700022342C /* blue-foldover-semi-circular-background-59283.jpg */; };
+		9FC007FD1CAE63580022342C /* Lighter-BG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FC007FC1CAE63580022342C /* Lighter-BG.jpg */; };
+		9FC008011CAE66010022342C /* add-user-icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FC008001CAE66010022342C /* add-user-icon.jpg */; };
+		9FE7C8EF1CB69448003D3789 /* success-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FE7C8EE1CB69448003D3789 /* success-icon.png */; };
+		9FE7C8F31CB6A5B1003D3789 /* mainPic.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FE7C8F21CB6A5B1003D3789 /* mainPic.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		9FC007E31CAE55090022342C /* AlzheimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlzheimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC007E71CAE55090022342C /* AlzheimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlzheimerUITests.swift; sourceTree = "<group>"; };
 		9FC007E91CAE55090022342C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FC007FA1CAE62700022342C /* blue-foldover-semi-circular-background-59283.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "blue-foldover-semi-circular-background-59283.jpg"; sourceTree = "<group>"; };
+		9FC007FC1CAE63580022342C /* Lighter-BG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lighter-BG.jpg"; sourceTree = "<group>"; };
+		9FC008001CAE66010022342C /* add-user-icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "add-user-icon.jpg"; sourceTree = "<group>"; };
+		9FE7C8EE1CB69448003D3789 /* success-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "success-icon.png"; sourceTree = "<group>"; };
+		9FE7C8F21CB6A5B1003D3789 /* mainPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainPic.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +113,7 @@
 				9FC007CE1CAE55090022342C /* Assets.xcassets */,
 				9FC007D01CAE55090022342C /* LaunchScreen.storyboard */,
 				9FC007D31CAE55090022342C /* Info.plist */,
+				9FC007F51CAE562C0022342C /* Support Files */,
 			);
 			path = Alzheimer;
 			sourceTree = "<group>";
@@ -123,6 +134,18 @@
 				9FC007E91CAE55090022342C /* Info.plist */,
 			);
 			path = AlzheimerUITests;
+			sourceTree = "<group>";
+		};
+		9FC007F51CAE562C0022342C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9FE7C8F21CB6A5B1003D3789 /* mainPic.png */,
+				9FE7C8EE1CB69448003D3789 /* success-icon.png */,
+				9FC008001CAE66010022342C /* add-user-icon.jpg */,
+				9FC007FC1CAE63580022342C /* Lighter-BG.jpg */,
+				9FC007FA1CAE62700022342C /* blue-foldover-semi-circular-background-59283.jpg */,
+			);
+			name = "Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,8 +256,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FC007D21CAE55090022342C /* LaunchScreen.storyboard in Resources */,
+				9FE7C8EF1CB69448003D3789 /* success-icon.png in Resources */,
 				9FC007CF1CAE55090022342C /* Assets.xcassets in Resources */,
 				9FC007CD1CAE55090022342C /* Main.storyboard in Resources */,
+				9FC007FD1CAE63580022342C /* Lighter-BG.jpg in Resources */,
+				9FC007FB1CAE62700022342C /* blue-foldover-semi-circular-background-59283.jpg in Resources */,
+				9FC008011CAE66010022342C /* add-user-icon.jpg in Resources */,
+				9FE7C8F31CB6A5B1003D3789 /* mainPic.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +513,7 @@
 				9FC007EE1CAE55090022342C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9FC007EF1CAE55090022342C /* Build configuration list for PBXNativeTarget "AlzheimerTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +522,7 @@
 				9FC007F11CAE55090022342C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9FC007F21CAE55090022342C /* Build configuration list for PBXNativeTarget "AlzheimerUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +531,7 @@
 				9FC007F41CAE55090022342C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
