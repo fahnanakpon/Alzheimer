@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F72B4481CC80D0700B93A0E /* PatientRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F72B4471CC80D0700B93A0E /* PatientRegisterViewController.swift */; };
+		9F72B44A1CC80F4300B93A0E /* PositionRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F72B4491CC80F4300B93A0E /* PositionRegisterViewController.swift */; };
+		9F72B44D1CC82E5C00B93A0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F72B44B1CC82E5C00B93A0E /* Main.storyboard */; };
+		9F72B44F1CC82EFF00B93A0E /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F72B44E1CC82EFF00B93A0E /* MainPageViewController.swift */; };
 		9FC007C81CAE55090022342C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC007C71CAE55090022342C /* AppDelegate.swift */; };
 		9FC007CA1CAE55090022342C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC007C91CAE55090022342C /* ViewController.swift */; };
-		9FC007CD1CAE55090022342C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FC007CB1CAE55090022342C /* Main.storyboard */; };
 		9FC007CF1CAE55090022342C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FC007CE1CAE55090022342C /* Assets.xcassets */; };
 		9FC007D21CAE55090022342C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FC007D01CAE55090022342C /* LaunchScreen.storyboard */; };
 		9FC007DD1CAE55090022342C /* AlzheimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC007DC1CAE55090022342C /* AlzheimerTests.swift */; };
@@ -17,6 +20,7 @@
 		9FC007FB1CAE62700022342C /* blue-foldover-semi-circular-background-59283.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FC007FA1CAE62700022342C /* blue-foldover-semi-circular-background-59283.jpg */; };
 		9FC007FD1CAE63580022342C /* Lighter-BG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FC007FC1CAE63580022342C /* Lighter-BG.jpg */; };
 		9FC008011CAE66010022342C /* add-user-icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FC008001CAE66010022342C /* add-user-icon.jpg */; };
+		9FDC0E261CB7AF12001725FD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDC0E251CB7AF12001725FD /* RegisterViewController.swift */; };
 		9FE7C8EF1CB69448003D3789 /* success-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FE7C8EE1CB69448003D3789 /* success-icon.png */; };
 		9FE7C8F31CB6A5B1003D3789 /* mainPic.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FE7C8F21CB6A5B1003D3789 /* mainPic.png */; };
 /* End PBXBuildFile section */
@@ -39,10 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F72B4471CC80D0700B93A0E /* PatientRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientRegisterViewController.swift; sourceTree = "<group>"; };
+		9F72B4491CC80F4300B93A0E /* PositionRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionRegisterViewController.swift; sourceTree = "<group>"; };
+		9F72B44C1CC82E5C00B93A0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9F72B44E1CC82EFF00B93A0E /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		9FC007C41CAE55090022342C /* Alzheimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alzheimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC007C71CAE55090022342C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FC007C91CAE55090022342C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9FC007CC1CAE55090022342C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FC007CE1CAE55090022342C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FC007D11CAE55090022342C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FC007D31CAE55090022342C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +62,7 @@
 		9FC007FA1CAE62700022342C /* blue-foldover-semi-circular-background-59283.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "blue-foldover-semi-circular-background-59283.jpg"; sourceTree = "<group>"; };
 		9FC007FC1CAE63580022342C /* Lighter-BG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lighter-BG.jpg"; sourceTree = "<group>"; };
 		9FC008001CAE66010022342C /* add-user-icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "add-user-icon.jpg"; sourceTree = "<group>"; };
+		9FDC0E251CB7AF12001725FD /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = Alzheimer/RegisterViewController.swift; sourceTree = "<group>"; };
 		9FE7C8EE1CB69448003D3789 /* success-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "success-icon.png"; sourceTree = "<group>"; };
 		9FE7C8F21CB6A5B1003D3789 /* mainPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainPic.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +95,10 @@
 		9FC007BB1CAE55090022342C = {
 			isa = PBXGroup;
 			children = (
+				9F72B44E1CC82EFF00B93A0E /* MainPageViewController.swift */,
+				9F72B4491CC80F4300B93A0E /* PositionRegisterViewController.swift */,
+				9F72B4471CC80D0700B93A0E /* PatientRegisterViewController.swift */,
+				9FDC0E251CB7AF12001725FD /* RegisterViewController.swift */,
 				9FC007C61CAE55090022342C /* Alzheimer */,
 				9FC007DB1CAE55090022342C /* AlzheimerTests */,
 				9FC007E61CAE55090022342C /* AlzheimerUITests */,
@@ -107,9 +119,9 @@
 		9FC007C61CAE55090022342C /* Alzheimer */ = {
 			isa = PBXGroup;
 			children = (
+				9F72B44B1CC82E5C00B93A0E /* Main.storyboard */,
 				9FC007C71CAE55090022342C /* AppDelegate.swift */,
 				9FC007C91CAE55090022342C /* ViewController.swift */,
-				9FC007CB1CAE55090022342C /* Main.storyboard */,
 				9FC007CE1CAE55090022342C /* Assets.xcassets */,
 				9FC007D01CAE55090022342C /* LaunchScreen.storyboard */,
 				9FC007D31CAE55090022342C /* Info.plist */,
@@ -258,7 +270,7 @@
 				9FC007D21CAE55090022342C /* LaunchScreen.storyboard in Resources */,
 				9FE7C8EF1CB69448003D3789 /* success-icon.png in Resources */,
 				9FC007CF1CAE55090022342C /* Assets.xcassets in Resources */,
-				9FC007CD1CAE55090022342C /* Main.storyboard in Resources */,
+				9F72B44D1CC82E5C00B93A0E /* Main.storyboard in Resources */,
 				9FC007FD1CAE63580022342C /* Lighter-BG.jpg in Resources */,
 				9FC007FB1CAE62700022342C /* blue-foldover-semi-circular-background-59283.jpg in Resources */,
 				9FC008011CAE66010022342C /* add-user-icon.jpg in Resources */,
@@ -287,8 +299,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FDC0E261CB7AF12001725FD /* RegisterViewController.swift in Sources */,
+				9F72B44A1CC80F4300B93A0E /* PositionRegisterViewController.swift in Sources */,
 				9FC007CA1CAE55090022342C /* ViewController.swift in Sources */,
 				9FC007C81CAE55090022342C /* AppDelegate.swift in Sources */,
+				9F72B44F1CC82EFF00B93A0E /* MainPageViewController.swift in Sources */,
+				9F72B4481CC80D0700B93A0E /* PatientRegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,10 +340,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9FC007CB1CAE55090022342C /* Main.storyboard */ = {
+		9F72B44B1CC82E5C00B93A0E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9FC007CC1CAE55090022342C /* Base */,
+				9F72B44C1CC82E5C00B93A0E /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
