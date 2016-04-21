@@ -93,8 +93,22 @@ class ViewController: UIViewController, UITextFieldDelegate {
                             prefs.setObject(username, forKey: "USERNAME")
                             prefs.setInteger(1, forKey: "ISLOGGEDIN")
                             prefs.synchronize()
+                    
+                            //let vc = MainPageViewController(nibName: nil, bundle: nil)
+                            //self.presentViewController(vc, animated: true, completion: nil)
+                        
                             
-                            self.dismissViewControllerAnimated(true, completion: nil)
+                            
+                            let alertView:UIAlertView = UIAlertView()
+                            alertView.title = "เข้าสู่ระบบสำเร็จ!"
+                            alertView.message = ""
+                            alertView.delegate = self
+                            alertView.addButtonWithTitle("ตกลง")
+                            alertView.show()
+                            //เคลียร์ช่อง text เมื่อเข้าสู่ระบบแล้วกดกลับมาให้เป็นช่องว่าง
+                            usernameTF.text = ("")
+                            passwordTF.text = ("")
+                        
                             
                         } else {
                             var error_msg:NSString
@@ -108,7 +122,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                             alertView.title = "การเข้าสู่ระบบผิดพลาด!"
                             alertView.message = error_msg as String
                             alertView.delegate = self
-                            alertView.addButtonWithTitle("OK")
+                            alertView.addButtonWithTitle("ตกลง")
                             alertView.show()
                             
                         }
@@ -143,6 +157,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
 
+    
+    func transition(Sender: UIButton!) {
+        let secondViewController:MainPageViewController = MainPageViewController()
+        
+        self.presentViewController(secondViewController, animated: false, completion: nil)
+    }
     
     
     // function ใช้ซ่อนคีย์บอร์ดเมื่อกด return

@@ -119,9 +119,9 @@
 		9FC007C61CAE55090022342C /* Alzheimer */ = {
 			isa = PBXGroup;
 			children = (
+				9FC007C91CAE55090022342C /* ViewController.swift */,
 				9F72B44B1CC82E5C00B93A0E /* Main.storyboard */,
 				9FC007C71CAE55090022342C /* AppDelegate.swift */,
-				9FC007C91CAE55090022342C /* ViewController.swift */,
 				9FC007CE1CAE55090022342C /* Assets.xcassets */,
 				9FC007D01CAE55090022342C /* LaunchScreen.storyboard */,
 				9FC007D31CAE55090022342C /* Info.plist */,
@@ -447,9 +447,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Alzheimer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DPU.Alzheimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -458,9 +460,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Alzheimer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DPU.Alzheimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
