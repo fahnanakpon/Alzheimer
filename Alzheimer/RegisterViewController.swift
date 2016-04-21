@@ -1,11 +1,3 @@
-//
-//  RegisterViewController.swift
-//  Alzheimer
-//
-//  Created by Fahn on 4/8/16.
-//  Copyright © 2016 Fahn. All rights reserved.
-//
-
 import UIKit
 
 class RegisterViewController: UIViewController, UITextFieldDelegate {
@@ -21,7 +13,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBOutlet weak var usernameRTF: UITextField!
+    
     @IBOutlet weak var passwordRTF: UITextField!
     @IBOutlet weak var repasswordRTF: UITextField!
     @IBOutlet weak var nameRTF: UITextField!
@@ -126,7 +118,16 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
                         if(success == 1)
                         {
                             NSLog("Sign Up SUCCESS");
+                            
+                            let alertView:UIAlertView = UIAlertView()
+                            alertView.title = "สมัครสมาชิกสำเร็จ!"
+                            alertView.message = ""
+                            alertView.delegate = self
+                            alertView.addButtonWithTitle("ตกลง")
+                            alertView.show()
+                            
                             self.dismissViewControllerAnimated(true, completion: nil)
+                            
                         } else {
                             var error_msg:NSString
                             
@@ -175,8 +176,26 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+    // function ซ่อนคีย์บอร์ดเวลากดที่อื่นนอกคีย์บอร์ด
+    @IBAction func onBackround(sender: AnyObject) {
+        passwordRTF.resignFirstResponder()
+        repasswordRTF.resignFirstResponder()
+        nameRTF.resignFirstResponder()
+        lastnameRTF.resignFirstResponder()
+        firstmobilenoRTF.resignFirstResponder()
+        secondmobilenoRTF.resignFirstResponder()
+        housenoRTF.resignFirstResponder()
+        streetRTF.resignFirstResponder()
+        subdistrictRTF.resignFirstResponder()
+        districtRTF.resignFirstResponder()
+        provinceRTF.resignFirstResponder()
+        emailRTF.resignFirstResponder()
+        lineidRTF.resignFirstResponder()
+    }
+    
+    
+    // function ซ่อนคีย์บอร์ดเวลากด return
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        usernameRTF.resignFirstResponder()
         passwordRTF.resignFirstResponder()
         repasswordRTF.resignFirstResponder()
         nameRTF.resignFirstResponder()
@@ -193,23 +212,4 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         
         return true
     }
-    
-    // function ใช้ซ่อนคีย์บอร์ดเวลาแตะที่อื่นของหน้าจอ
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        usernameRTF.resignFirstResponder()
-        passwordRTF.resignFirstResponder()
-        repasswordRTF.resignFirstResponder()
-        nameRTF.resignFirstResponder()
-        lastnameRTF.resignFirstResponder()
-        firstmobilenoRTF.resignFirstResponder()
-        secondmobilenoRTF.resignFirstResponder()
-        housenoRTF.resignFirstResponder()
-        streetRTF.resignFirstResponder()
-        subdistrictRTF.resignFirstResponder()
-        districtRTF.resignFirstResponder()
-        provinceRTF.resignFirstResponder()
-        emailRTF.resignFirstResponder()
-        lineidRTF.resignFirstResponder()
-    }
-
 }
