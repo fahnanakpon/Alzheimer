@@ -1,10 +1,20 @@
 import UIKit
 
 class RegisterViewController: UIViewController, UITextFieldDelegate {
+    
+    //var kbHeight: CGFloat!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        passwordRTF.delegate = self // ใช้ร่วมกับฟังก์ชัน textField
+        
+        //เลื่อนวิวขึ้นเมื่อพิมพ์คีย์บอร์ด 2
+        /*
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(RegisterViewController.keyboardWillShow), name: UIKeyboardWillShowNotification, object: nil)
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(RegisterViewController.keyboardWillHide), name: UIKeyboardWillHideNotification, object: nil)
+        */
+ 
         // Do any additional setup after loading the view.
     }
 
@@ -13,6 +23,32 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    //กำหนดว่า text field แต่ละช่องสามารถใส่อักษรได้ไม่เกินกี่ตัวบ้าง
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        let newLength = textField.text!.characters.count + string.characters.count - range.length
+        if textField == passwordRTF {
+            return newLength <= 15 // Bool
+        } else if textField == repasswordRTF {
+            return newLength <= 15 // Bool
+        } else if textField == firstmobilenoRTF {
+            return newLength <= 10 // Bool
+        } else if textField == secondmobilenoRTF {
+            return newLength <= 10 // Bool
+        }
+        
+        return true
+    }
+    
+    /*func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange,
+                   replacementString string: String) -> Bool
+    {
+        let maxLength = 15
+        //let minLength = 4
+        let currentString: NSString = textField.text!
+        let newString: NSString =
+            currentString.stringByReplacingCharactersInRange(range, withString: string)
+        return newString.length <= maxLength //&& newString.length >= minLength
+    }*/
     
     @IBOutlet weak var passwordRTF: UITextField!
     @IBOutlet weak var repasswordRTF: UITextField!
@@ -44,7 +80,9 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         let email: NSString = emailRTF.text!
         let lineid: NSString = lineidRTF.text!
         
-        if ( email.isEqualToString("") || password.isEqualToString("") || repassword.isEqualToString("") ) {
+        
+        
+        if ( email.isEqualToString("") || password.isEqualToString("") || repassword.isEqualToString("") || name.isEqualToString("") || lastname.isEqualToString("")) {
             
             let alertView:UIAlertView = UIAlertView()
             alertView.title = "การสมัครสมาชิกไม่สำเร็จ!"
@@ -212,4 +250,78 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         
         return true
     }
+    
+    //เลื่อนวิวขึ้นเมื่อพิมพ์คีย์บอร์ด 2
+    /*
+    func keyboardWillShow(notification:NSNotification) {
+        adjustingHeight(true, notification: notification)
+    }
+    
+    func keyboardWillHide(notification:NSNotification) {
+        adjustingHeight(false, notification: notification)
+    }
+    
+    func adjustingHeight(show:Bool, notification:NSNotification) {
+        // 1
+        var userInfo = notification.userInfo!
+        // 2
+        let keyboardFrame:CGRect = (userInfo[UIKeyboardFrameBeginUserInfoKey] as! NSValue).CGRectValue()
+        // 3
+        let animationDurarion = userInfo[UIKeyboardAnimationDurationUserInfoKey] as! NSTimeInterval
+        // 4
+        let changeInHeight = (CGRectGetHeight(keyboardFrame) + 40) * (show ? 1 : -1)
+        //5
+        UIView.animateWithDuration(animationDurarion, animations: { () -> Void in
+            self.bottomConstraint.constant += changeInHeight
+        })
+        
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillHideNotification, object: nil)
+    }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    */
+    
+    //เลื่อนวิวขึ้นเมื่อพิมพ์คีย์บอร์ด 1
+    /*
+    override func viewWillAppear(animated:Bool) {
+        super.viewWillAppear(animated)
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name: UIKeyboardWillHideNotification, object: nil)
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
+    func keyboardWillShow(notification: NSNotification) {
+        if let userInfo = notification.userInfo {
+            if let keyboardSize =  (userInfo[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
+                kbHeight = 100//keyboardSize.height
+                self.animateTextField(true)
+            }
+        }
+    }
+    
+    func keyboardWillHide(notification: NSNotification) {
+        self.animateTextField(false)
+    }
+    
+    func animateTextField(up: Bool) {
+        var movement = (up ? -kbHeight : kbHeight)
+        
+        UIView.animateWithDuration(0.3, animations: {
+            self.view.frame = CGRectOffset(self.view.frame, 0, movement)
+        })
+    }
+    */
+ 
 }
