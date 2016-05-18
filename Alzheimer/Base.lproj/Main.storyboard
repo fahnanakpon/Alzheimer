@@ -47,7 +47,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="aH2-53-bDB" kind="show" id="7iU-rP-WgW"/>
+                                    <segue destination="aH2-53-bDB" kind="show" id="kUR-75-AZL"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sQk-NC-ZBO">
@@ -177,9 +177,6 @@
                                         <integer key="value" value="6"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="bXj-EC-uzH" kind="show" id="FUx-SP-dgA"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sch-by-MgH">
                                 <rect key="frame" x="173" y="506" width="106" height="33"/>
@@ -193,9 +190,6 @@
                                         <integer key="value" value="6"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="GpR-ff-GFh" kind="show" id="x9H-2o-83p"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0E-Ez-5Ww">
                                 <rect key="frame" x="60" y="174" width="200" height="55"/>
@@ -222,7 +216,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rGZ-QU-das" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="497" y="965"/>
+            <point key="canvasLocation" x="430" y="1052"/>
         </scene>
         <!--RegisterSuccess-->
         <scene sceneID="g5R-iq-X1j">
@@ -272,7 +266,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BHa-8d-QPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="878" y="965"/>
+            <point key="canvasLocation" x="880" y="1043"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="mwo-gS-cma">
@@ -574,7 +568,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="555" y="247"/>
+            <point key="canvasLocation" x="517" y="-457"/>
         </scene>
         <!--RegisterCaretaker-->
         <scene sceneID="ccG-19-bhl">
@@ -905,7 +899,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iEr-In-BNy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="998" y="216"/>
+            <point key="canvasLocation" x="630" y="259"/>
         </scene>
         <!--PatientRegister-->
         <scene sceneID="N3E-je-f1C">
@@ -1018,9 +1012,6 @@
                                         <integer key="value" value="6"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="nyD-nE-t5w" kind="show" id="iu6-X3-Rn7"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5NX-FN-AFz">
                                 <rect key="frame" x="173" y="506" width="106" height="33"/>
@@ -1036,7 +1027,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="patientSubmitButton:" destination="bXj-EC-uzH" eventType="touchUpInside" id="ujH-yE-K5h"/>
-                                    <segue destination="t8W-3G-BaK" kind="show" id="0WQ-OA-Q5R"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="กรอกข้อมูลผู้ป่วย" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRN-0l-LsO">
@@ -1090,7 +1080,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w09-d3-qfE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="118" y="965"/>
+            <point key="canvasLocation" x="21" y="976"/>
         </scene>
         <!--MainPage-->
         <scene sceneID="ibC-za-Ykp">
@@ -1186,7 +1176,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zvn-xv-jc6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-236" y="247"/>
+            <point key="canvasLocation" x="-313" y="286"/>
         </scene>
     </scenes>
     <resources>
