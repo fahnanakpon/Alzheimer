@@ -16,6 +16,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var usernameTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     
+    
+    
     @IBAction func loginButton(sender: UIButton) {
         //Action เข้าสู่ระบบ นำช่อง User&Pass เช็คว่ากรอกครบรึป่าวถ้าครบก็ส่งไปเช็คกับฐานข้อมูล
         

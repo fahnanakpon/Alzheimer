@@ -11,6 +11,8 @@
 		9F72B44A1CC80F4300B93A0E /* PositionRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F72B4491CC80F4300B93A0E /* PositionRegisterViewController.swift */; };
 		9F72B44D1CC82E5C00B93A0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F72B44B1CC82E5C00B93A0E /* Main.storyboard */; };
 		9F72B44F1CC82EFF00B93A0E /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F72B44E1CC82EFF00B93A0E /* MainPageViewController.swift */; };
+		9F977B471CED418C00976AA2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F977B461CED418C00976AA2 /* MapKit.framework */; };
+		9F977B491CED429D00976AA2 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F977B481CED429D00976AA2 /* mapViewController.swift */; };
 		9FC007C81CAE55090022342C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC007C71CAE55090022342C /* AppDelegate.swift */; };
 		9FC007CA1CAE55090022342C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC007C91CAE55090022342C /* ViewController.swift */; };
 		9FC007CF1CAE55090022342C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FC007CE1CAE55090022342C /* Assets.xcassets */; };
@@ -47,6 +49,8 @@
 		9F72B4491CC80F4300B93A0E /* PositionRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionRegisterViewController.swift; sourceTree = "<group>"; };
 		9F72B44C1CC82E5C00B93A0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F72B44E1CC82EFF00B93A0E /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		9F977B461CED418C00976AA2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9F977B481CED429D00976AA2 /* mapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
 		9FC007C41CAE55090022342C /* Alzheimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alzheimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC007C71CAE55090022342C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FC007C91CAE55090022342C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F977B471CED418C00976AA2 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,8 +100,10 @@
 		9FC007BB1CAE55090022342C = {
 			isa = PBXGroup;
 			children = (
+				9F977B461CED418C00976AA2 /* MapKit.framework */,
 				9F72B44E1CC82EFF00B93A0E /* MainPageViewController.swift */,
 				9F72B4491CC80F4300B93A0E /* PositionRegisterViewController.swift */,
+				9F977B481CED429D00976AA2 /* mapViewController.swift */,
 				9F72B4471CC80D0700B93A0E /* PatientRegisterViewController.swift */,
 				9FDC0E251CB7AF12001725FD /* RegisterViewController.swift */,
 				9FC007C61CAE55090022342C /* Alzheimer */,
@@ -303,6 +310,7 @@
 				9F72B44A1CC80F4300B93A0E /* PositionRegisterViewController.swift in Sources */,
 				9FC007CA1CAE55090022342C /* ViewController.swift in Sources */,
 				9FC007C81CAE55090022342C /* AppDelegate.swift in Sources */,
+				9F977B491CED429D00976AA2 /* mapViewController.swift in Sources */,
 				9F72B44F1CC82EFF00B93A0E /* MainPageViewController.swift in Sources */,
 				9F72B4481CC80D0700B93A0E /* PatientRegisterViewController.swift in Sources */,
 			);

@@ -107,6 +107,21 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gH9-Wo-auL">
+                                <rect key="frame" x="101" y="511" width="118" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="ทดสอบแผนที่">
+                                    <color key="titleColor" red="0.14901960780000001" green="0.57254901960000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="pN7-sW-luu" kind="show" id="W3Y-b5-mOO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1102,6 +1117,52 @@
             </objects>
             <point key="canvasLocation" x="21" y="976"/>
         </scene>
+        <!--mapViewController-->
+        <scene sceneID="Oha-hg-ptI">
+            <objects>
+                <viewController title="mapViewController" id="pN7-sW-luu" customClass="mapViewController" customModule="Alzheimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xge-xz-OZD"/>
+                        <viewControllerLayoutGuide type="bottom" id="CUq-qm-gEb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5X8-Jg-ARk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="GHQ-v2-Teq">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <connections>
+                                    <outlet property="delegate" destination="pN7-sW-luu" id="maO-Jc-u1B"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hfz-4Z-RDJ">
+                                <rect key="frame" x="20" y="28" width="45" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="กลับ">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="QPa-iR-T7j"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="theMapView" destination="GHQ-v2-Teq" id="IfV-rG-3Yh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="csw-2d-dkT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-60" y="-417"/>
+        </scene>
         <!--MainPage-->
         <scene sceneID="ibC-za-Ykp">
             <objects>
@@ -1207,6 +1268,6 @@
         <image name="success-icon.png" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="izl-8v-MOv"/>
+        <segue reference="QPa-iR-T7j"/>
     </inferredMetricsTieBreakers>
 </document>
