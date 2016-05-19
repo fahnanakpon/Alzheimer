@@ -31,5 +31,13 @@ class PatientRegisterViewController: UIViewController {
     
     @IBAction func patientSubmitButton(sender: UIButton) {
     }
+    
+    //ทำให้หน้าจอแอพเป็นแนวตั้งอย่างเดียว
+    override func shouldAutorotate() -> Bool {
+        return false
+    }
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.Portrait
+    }
 
 }

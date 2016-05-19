@@ -284,14 +284,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="กรอกข้อมูลผู้ดูแล" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wd-sG-ufx">
-                                <rect key="frame" x="27" y="58" width="267" height="51"/>
+                                <rect key="frame" x="-23" y="52" width="267" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="สมัครสมาชิก" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCd-WY-vts">
-                                <rect key="frame" x="42" y="5" width="237" height="84"/>
+                                <rect key="frame" x="-8" y="-1" width="237" height="84"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -499,7 +499,7 @@
                                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ax-b6-mNI">
-                                                <rect key="frame" x="42" y="528" width="100" height="33"/>
+                                                <rect key="frame" x="42" y="528" width="72" height="33"/>
                                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="กลับ">
@@ -515,7 +515,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2H-eV-6Bv">
-                                                <rect key="frame" x="173" y="528" width="106" height="33.5"/>
+                                                <rect key="frame" x="215" y="528" width="64" height="33.5"/>
                                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="ต่อไป">
@@ -531,6 +531,22 @@
                                                     <action selector="registerButton:" destination="aH2-53-bDB" eventType="touchUpInside" id="WBc-0E-pgX"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRe-K7-20S">
+                                                <rect key="frame" x="133" y="528" width="64" height="33.5"/>
+                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <state key="normal" title="ใส่รูป">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="openPhotoLibraryButton:" destination="aH2-53-bDB" eventType="touchUpInside" id="Q5Z-EX-V1P"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <gestureRecognizers/>
                                         <connections>
@@ -540,6 +556,9 @@
                                 </subviews>
                                 <gestureRecognizers/>
                             </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="add-user-icon.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OU7-yL-rZc">
+                                <rect key="frame" x="215" y="20" width="69" height="69"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -550,6 +569,7 @@
                         <outlet property="emailRTF" destination="H9L-LB-jZz" id="kKw-mo-kdL"/>
                         <outlet property="firstmobilenoRTF" destination="Qef-X8-rtx" id="zGE-ah-XhR"/>
                         <outlet property="housenoRTF" destination="fd0-zP-X2C" id="vg6-ak-XxW"/>
+                        <outlet property="imagePicked" destination="OU7-yL-rZc" id="eUg-VO-Hra"/>
                         <outlet property="lastnameRTF" destination="zVI-JS-BNW" id="1gi-DU-Oqz"/>
                         <outlet property="lineidRTF" destination="AG1-gZ-nTo" id="unk-01-FDP"/>
                         <outlet property="nameRTF" destination="rjT-UN-dgA" id="C5B-54-xjc"/>

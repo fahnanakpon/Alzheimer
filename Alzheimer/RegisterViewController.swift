@@ -1,6 +1,6 @@
 import UIKit
 
-class RegisterViewController: UIViewController, UITextFieldDelegate {
+class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIAlertViewDelegate {
     
     //var kbHeight: CGFloat!
 
@@ -22,6 +22,55 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBOutlet weak var imagePicked: UIImageView!
+    
+    
+    //สร้าง alertView
+    @IBAction func openPhotoLibraryButton(sender: AnyObject) {
+        let alertView = UIAlertView(title: "เลือกรูป", message: "โปรดเลือกว่าต้องการถ่ายรูปใหม่จากกล้องหรือใช้รูปที่มีอยู่ในอัลบั้ม", delegate: self, cancelButtonTitle: "กล้อง", otherButtonTitles: "อัลบั้ม")
+        
+        alertView.tag = 1
+        
+        alertView.show()
+    }
+    
+    //กำหนดค่าให้ตัวเลือกของ alertView
+    func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
+        if alertView.tag == 1 {
+            //ถ้ากด ถ่ายรูปจากกล้อง
+            if buttonIndex == 0 {
+                print("ผู้ใช้กด ถ่ายรูปจากกล้อง")
+                if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera) {
+                    var imagePicker = UIImagePickerController()
+                    imagePicker.delegate = self
+                    imagePicker.sourceType = UIImagePickerControllerSourceType.Camera;
+                    imagePicker.allowsEditing = false
+                    self.presentViewController(imagePicker, animated: true, completion: nil)
+                }
+                
+            }
+            //ถ้ากด เลือกรูปจากอัลบั้ม
+            else {
+                print("ผู้ใช้กด เลือกรูปจากอัลบั้ม")
+                if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary) {
+                    var imagePicker = UIImagePickerController()
+                    imagePicker.delegate = self
+                    imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary;
+                    imagePicker.allowsEditing = true
+                    self.presentViewController(imagePicker, animated: true, completion: nil)
+                }
+            }
+        }
+    }
+    
+    //เอารูปที่เลือก ใส่ลงใน  imageView
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
+        imagePicked.image = image
+        self.dismissViewControllerAnimated(true, completion: nil);
+    }
+    
+    
     
     //กำหนดว่า text field แต่ละช่องสามารถใส่อักษรได้ไม่เกินกี่ตัวบ้าง
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
@@ -323,5 +372,13 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         })
     }
     */
+    
+    //ทำให้หน้าจอแอพเป็นแนวตั้งอย่างเดียว
+    override func shouldAutorotate() -> Bool {
+        return false
+    }
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.Portrait
+    }
  
 }
