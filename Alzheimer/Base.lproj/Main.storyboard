@@ -281,7 +281,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BHa-8d-QPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="880" y="1043"/>
+            <point key="canvasLocation" x="1001" y="-186"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="mwo-gS-cma">
@@ -1268,6 +1268,6 @@
         <image name="success-icon.png" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="QPa-iR-T7j"/>
+        <segue reference="VWZ-aa-J4r"/>
     </inferredMetricsTieBreakers>
 </document>
