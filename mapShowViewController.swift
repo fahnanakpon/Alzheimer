@@ -7,6 +7,7 @@ class mapShowViewController: UIViewController,CLLocationManagerDelegate, MKMapVi
     @IBOutlet weak var mapView: MKMapView!
     
     var locationManager: CLLocationManager!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,6 +56,19 @@ class mapShowViewController: UIViewController,CLLocationManagerDelegate, MKMapVi
         }
         return nil
     }
+    
+    //ปักหมุด
+    @IBAction func addPin(sender: UILongPressGestureRecognizer) {
+        let location = sender.locationInView(self.mapView)
+        let locCoord = self.mapView.convertPoint(location, toCoordinateFromView: self.mapView)
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = locCoord
+        annotation.title = "Pinned Location"
+        
+        self.mapView.removeAnnotations(mapView.annotations)
+        self.mapView.addAnnotation(annotation)
+    }
+    
     
     //ทำให้หน้าจอแอพเป็นแนวตั้งอย่างเดียว
     override func shouldAutorotate() -> Bool {

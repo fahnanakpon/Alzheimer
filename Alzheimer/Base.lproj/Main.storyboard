@@ -282,6 +282,10 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="J5d-sL-qcz">
                                 <rect key="frame" x="0.0" y="-15" width="320" height="568"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="zda-mb-XTP" appends="YES" id="3gT-Ab-yua"/>
+                                </connections>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3PX-Jh-yMy">
                                 <rect key="frame" x="13" y="510" width="95" height="30"/>
@@ -347,6 +351,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7sV-DZ-Skb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="zda-mb-XTP">
+                    <connections>
+                        <action selector="addPin:" destination="sBU-K7-MxH" id="nsJ-9v-mgr"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-738" y="247"/>
         </scene>
