@@ -1,10 +1,3 @@
-//
-//  PositionRegisterViewController.swift
-//  Alzheimer
-//
-//  Created by Fahn on 4/21/16.
-//  Copyright © 2016 Fahn. All rights reserved.
-//
 
 import UIKit
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F28EF761CEE1C980067B70D /* MyLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F28EF751CEE1C980067B70D /* MyLocationViewController.swift */; };
+		9F28EF781CEE1DD40067B70D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F28EF771CEE1DD40067B70D /* CoreLocation.framework */; };
 		9F72B4481CC80D0700B93A0E /* PatientRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F72B4471CC80D0700B93A0E /* PatientRegisterViewController.swift */; };
 		9F72B44A1CC80F4300B93A0E /* PositionRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F72B4491CC80F4300B93A0E /* PositionRegisterViewController.swift */; };
 		9F72B44D1CC82E5C00B93A0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F72B44B1CC82E5C00B93A0E /* Main.storyboard */; };
@@ -45,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F28EF751CEE1C980067B70D /* MyLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyLocationViewController.swift; sourceTree = "<group>"; };
+		9F28EF771CEE1DD40067B70D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		9F72B4471CC80D0700B93A0E /* PatientRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientRegisterViewController.swift; sourceTree = "<group>"; };
 		9F72B4491CC80F4300B93A0E /* PositionRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionRegisterViewController.swift; sourceTree = "<group>"; };
 		9F72B44C1CC82E5C00B93A0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,7 +57,7 @@
 		9F977B481CED429D00976AA2 /* mapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
 		9FC007C41CAE55090022342C /* Alzheimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alzheimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC007C71CAE55090022342C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9FC007C91CAE55090022342C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9FC007C91CAE55090022342C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Alzheimer/ViewController.swift; sourceTree = "<group>"; };
 		9FC007CE1CAE55090022342C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FC007D11CAE55090022342C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FC007D31CAE55090022342C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F28EF781CEE1DD40067B70D /* CoreLocation.framework in Frameworks */,
 				9F977B471CED418C00976AA2 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,12 +105,16 @@
 		9FC007BB1CAE55090022342C = {
 			isa = PBXGroup;
 			children = (
+				9F28EF771CEE1DD40067B70D /* CoreLocation.framework */,
 				9F977B461CED418C00976AA2 /* MapKit.framework */,
+				9F28EF751CEE1C980067B70D /* MyLocationViewController.swift */,
 				9F72B44E1CC82EFF00B93A0E /* MainPageViewController.swift */,
 				9F72B4491CC80F4300B93A0E /* PositionRegisterViewController.swift */,
 				9F977B481CED429D00976AA2 /* mapViewController.swift */,
 				9F72B4471CC80D0700B93A0E /* PatientRegisterViewController.swift */,
 				9FDC0E251CB7AF12001725FD /* RegisterViewController.swift */,
+				9FC007C91CAE55090022342C /* ViewController.swift */,
+				9F72B44B1CC82E5C00B93A0E /* Main.storyboard */,
 				9FC007C61CAE55090022342C /* Alzheimer */,
 				9FC007DB1CAE55090022342C /* AlzheimerTests */,
 				9FC007E61CAE55090022342C /* AlzheimerUITests */,
@@ -126,8 +135,6 @@
 		9FC007C61CAE55090022342C /* Alzheimer */ = {
 			isa = PBXGroup;
 			children = (
-				9FC007C91CAE55090022342C /* ViewController.swift */,
-				9F72B44B1CC82E5C00B93A0E /* Main.storyboard */,
 				9FC007C71CAE55090022342C /* AppDelegate.swift */,
 				9FC007CE1CAE55090022342C /* Assets.xcassets */,
 				9FC007D01CAE55090022342C /* LaunchScreen.storyboard */,
@@ -313,6 +320,7 @@
 				9F977B491CED429D00976AA2 /* mapViewController.swift in Sources */,
 				9F72B44F1CC82EFF00B93A0E /* MainPageViewController.swift in Sources */,
 				9F72B4481CC80D0700B93A0E /* PatientRegisterViewController.swift in Sources */,
+				9F28EF761CEE1C980067B70D /* MyLocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +362,7 @@
 				9F72B44C1CC82E5C00B93A0E /* Base */,
 			);
 			name = Main.storyboard;
+			path = Alzheimer;
 			sourceTree = "<group>";
 		};
 		9FC007D01CAE55090022342C /* LaunchScreen.storyboard */ = {

@@ -106,7 +106,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
                             alertView.message = ""
                             alertView.delegate = self
                             alertView.addButtonWithTitle("ตกลง")
-                            alertView.show()
+                            //alertView.show()
+                            
+                            self.performSegueWithIdentifier("loginToMain", sender: self)
+                            
                             //เคลียร์ช่อง text เมื่อเข้าสู่ระบบแล้วกดกลับมาให้เป็นช่องว่าง
                             usernameTF.text = ("")
                             passwordTF.text = ("")
