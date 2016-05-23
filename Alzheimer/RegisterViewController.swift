@@ -211,9 +211,10 @@ class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePick
                             alertView.message = ""
                             alertView.delegate = self
                             alertView.addButtonWithTitle("ตกลง")
-                            alertView.show()
+                            //alertView.show()
                             
-                            self.dismissViewControllerAnimated(true, completion: nil)
+                            //self.dismissViewControllerAnimated(true, completion: nil)
+                            self.performSegueWithIdentifier("registerSuccessSegue", sender: self)
                             
                         } else {
                             var error_msg:NSString
